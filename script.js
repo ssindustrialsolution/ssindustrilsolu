@@ -148,10 +148,10 @@ pump:[
 ],
 
 electrical:[
-"images/slid1.jpeg",
-"images/slid2.jpeg",
-"images/slid3.jpeg",
-"images/slid4.jpeg"
+"images/slides1.jpeg",
+"images/slides2.jpeg",
+"images/slides3.jpeg",
+"images/slides4.jpeg"
 ],
 
 pipeline:[
@@ -162,10 +162,16 @@ pipeline:[
 ],
 
 crane:[
-"images/crane1.jpeg",
-"images/crane2.jpeg",
-"images/crane3.jpeg",
-"images/crane4.jpeg"
+"images/crane1.jpg",
+"images/crane2.jpg",
+"images/crane3.jpg"
+],
+
+spares:[
+"images/spares1.jpeg",
+"images/spares2.jpeg",
+"images/spares3.jpeg",
+"images/spares4.jpeg"
 ]
 
 };
@@ -188,3 +194,10 @@ gallery.innerHTML += `
 }
 
 showProject("pump");
+
+const toggle = document.querySelector('.nav-toggle');
+const links = document.querySelector('.nav-links');
+
+toggle.addEventListener('click', () => {
+    links.classList.toggle('active');
+});
